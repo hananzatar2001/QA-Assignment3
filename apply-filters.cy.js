@@ -1,7 +1,158 @@
-//1-All Goals,Group filter all,Level filters all
 describe('goals page', () => {
-
-  /////////*************************************************////////////////
+  //1-All Goals,Group filter all,Level filters all
+  it('1-goals-page-All-Goals,Group-filter-all,Level-filters-all', function () {
+    cy.visit('https://goal-dev.mdx.ac.uk');
+    cy.get('#id_username').type('HananZatar');
+    cy.get('#id_password').type('hanan@1@0123');
+    cy.get(':nth-child(4) > div > .form-control').select('staff');
+    cy.get('.btn').click();
+    cy.get('.fas').should('exist');
+    //open
+    cy.get(
+      ':nth-child(2) > .row > .col-sm-4 > .nav > .nav-item > .nav-link'
+    ).click();
+    //Goal page
+    cy.get('.mr-auto > :nth-child(2) > .nav-link').click();
+    //Goal Filter
+    cy.get(':nth-child(1) > .custom-control-label > h5').click();
+    //Group filter all
+    cy.get(
+      '[style="overflow-y: scroll;height: 30.7vh"] > :nth-child(1)'
+    ).click();
+    cy.get('.align-items-center > :nth-child(3) > .btn').click();
+  });
+  //2-All Goals,Group filter G1,Level filters all
+  it('2-All Goals,Group filter G1,Level filters all', function () {
+    cy.visit('https://goal-dev.mdx.ac.uk');
+    cy.get('#id_username').type('HananZatar');
+    cy.get('#id_password').type('hanan@1@0123');
+    cy.get(':nth-child(4) > div > .form-control').select('staff');
+    cy.get('.btn').click();
+    cy.get('.fas').should('exist');
+    //open
+    cy.get(
+      ':nth-child(2) > .row > .col-sm-4 > .nav > .nav-item > .nav-link'
+    ).click();
+    //Goal page
+    cy.get('.mr-auto > :nth-child(2) > .nav-link').click();
+    //Goal Filter
+    cy.get(':nth-child(1) > .custom-control-label > h5').click();
+    //Group filter all
+    cy.get(
+      '[style="overflow-y: scroll;height: 30.7vh"] > :nth-child(3)'
+    ).click();
+    cy.get('.align-items-center > :nth-child(3) > .btn').click();
+  });
+  //3-All Goals,Group filter G2,Level filters all
+  it('3-All Goals,Group filter G2,Level filters all', function () {
+    cy.visit('https://goal-dev.mdx.ac.uk');
+    cy.get('#id_username').type('HananZatar');
+    cy.get('#id_password').type('hanan@1@0123');
+    cy.get(':nth-child(4) > div > .form-control').select('staff');
+    cy.get('.btn').click();
+    cy.get('.fas').should('exist');
+    //open
+    cy.get(
+      ':nth-child(2) > .row > .col-sm-4 > .nav > .nav-item > .nav-link'
+    ).click();
+    //Goal page
+    cy.get('.mr-auto > :nth-child(2) > .nav-link').click();
+    //Goal Filter
+    cy.get(':nth-child(1) > .custom-control-label > h5').click();
+    //Group filter all
+    cy.get(
+      '[style="overflow-y: scroll;height: 30.7vh"] > :nth-child(4) > .custom-control'
+    ).click();
+    cy.get('.align-items-center > :nth-child(3) > .btn').click();
+  });
+  //3-All Goals,Group filter G3,Level filters all
+  it('3-All Goals,Group filter G3,Level filters all', function () {
+    cy.visit('https://goal-dev.mdx.ac.uk');
+    cy.get('#id_username').type('HananZatar');
+    cy.get('#id_password').type('hanan@1@0123');
+    cy.get(':nth-child(4) > div > .form-control').select('staff');
+    cy.get('.btn').click();
+    cy.get('.fas').should('exist');
+    //open
+    cy.get(
+      ':nth-child(2) > .row > .col-sm-4 > .nav > .nav-item > .nav-link'
+    ).click();
+    //Goal page
+    cy.get('.mr-auto > :nth-child(2) > .nav-link').click();
+    //Goal Filter
+    cy.get(':nth-child(1) > .custom-control-label > h5').click();
+    //Group filter all
+    cy.get(
+      '[style="overflow-y: scroll;height: 30.7vh"] > :nth-child(5)'
+    ).click();
+    cy.get('.align-items-center > :nth-child(3) > .btn').click();
+  });
+  //4-topic 1 Goals,Group filter all,Level filters all
+  it('4-topic 1 Goals,Group filter all,Level filters all', function () {
+    cy.visit('https://goal-dev.mdx.ac.uk');
+    cy.get('#id_username').type('HananZatar');
+    cy.get('#id_password').type('hanan@1@0123');
+    cy.get(':nth-child(4) > div > .form-control').select('staff');
+    cy.get('.btn').click();
+    cy.get('.fas').should('exist');
+    //open
+    cy.get(
+      ':nth-child(2) > .row > .col-sm-4 > .nav > .nav-item > .nav-link'
+    ).click();
+    //Goal page
+    cy.get('.mr-auto > :nth-child(2) > .nav-link').click();
+    //Goal Filter
+    cy.get(':nth-child(1) > .custom-control-label > h5').click();
+    //Group filter all
+    cy.get(
+      '[style="overflow-y: scroll;height: 30.7vh"] > :nth-child(1)'
+    ).click();
+    cy.get('.align-items-center > :nth-child(3) > .btn').click();
+  });
+  //5-topic 2 Goals,Group filter all,Level filters all
+  it('5-topic 2 Goals,Group filter all,Level filters all', function () {
+    cy.visit('https://goal-dev.mdx.ac.uk');
+    cy.get('#id_username').type('HananZatar');
+    cy.get('#id_password').type('hanan@1@0123');
+    cy.get(':nth-child(4) > div > .form-control').select('staff');
+    cy.get('.btn').click();
+    cy.get('.fas').should('exist');
+    //open
+    cy.get(
+      ':nth-child(2) > .row > .col-sm-4 > .nav > .nav-item > .nav-link'
+    ).click();
+    //Goal page
+    cy.get('.mr-auto > :nth-child(2) > .nav-link').click();
+    //Goal Filter
+    cy.get(':nth-child(7) > .custom-control-label > h5').click();
+    //Group filter all
+    cy.get(
+      '[style="overflow-y: scroll;height: 30.7vh"] > :nth-child(1)'
+    ).click();
+    cy.get('.align-items-center > :nth-child(3) > .btn').click();
+  });
+  //6-topic3-Goal1,Group-filter,Level-filters-all
+  it('6-topic3-Goal1,Group-filter,Level-filters-all', function () {
+    cy.visit('https://goal-dev.mdx.ac.uk');
+    cy.get('#id_username').type('HananZatar');
+    cy.get('#id_password').type('hanan@1@0123');
+    cy.get(':nth-child(4) > div > .form-control').select('staff');
+    cy.get('.btn').click();
+    cy.get('.fas').should('exist');
+    //open
+    cy.get(
+      ':nth-child(2) > .row > .col-sm-4 > .nav > .nav-item > .nav-link'
+    ).click();
+    //Goal page
+    cy.get(':nth-child(10) > .custom-control-label > h5').click();
+    //Goal Filter
+    cy.get(':nth-child(1) > .custom-control-label > h5').click();
+    //Group filter all
+    cy.get(
+      '[style="overflow-y: scroll;height: 30.7vh"] > :nth-child(3)'
+    ).click();
+    cy.get('.align-items-center > :nth-child(3) > .btn').click();
+  });
   //7-topic1-Goal1-hanan,Group-filter,Level-filters-all
   it('7-topic1-Goal1-hanan,Group-filter,Level-filters-all', function () {
     cy.visit('https://goal-dev.mdx.ac.uk');
